@@ -1,7 +1,10 @@
 file = open("config.txt","r",encoding="UTF-8")
 
-def print_hello():
-    print(file.readline())
+def summ():
+    text = file.read().split()
+    a:int = int(text[0])
+    b:int = int(text[1])
+    print(a + b)
 
 
-print_hello()
+summ()
